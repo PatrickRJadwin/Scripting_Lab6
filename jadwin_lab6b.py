@@ -1,4 +1,6 @@
-usr = input('Enter a word: ')
+from __future__ import division
+
+usr = raw_input('Enter a word: ')
 usr = usr.upper()
 
 letter = 0
