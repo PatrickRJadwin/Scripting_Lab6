@@ -2,7 +2,7 @@ import random as r
 
 print('1st roll...')
 
-inp1 = input('Welcome to Craps! Enter Y for the first roll!\n')
+inp1 = raw_input('Welcome to Craps! Enter Y for the first roll!\n')
 print('\n')
 
 if inp1.upper() != 'Y':
@@ -43,7 +43,7 @@ if roll2 == 2 or roll2 == 3 or roll2 == 12:
     print('Computer loses on the first roll! You win!')
     exit(0)
 
-keepplaying = input('Keep playing? (Y for yes, N for no)\n')
+keepplaying = raw_input('Keep playing? (Y for yes, N for no)\n')
 print('\n')
 
 if keepplaying != 'y':
@@ -78,7 +78,7 @@ while isMatch == False:
         if roll3 == 7:
             comp = True
             break
-    kpplay = input('Keep playing? (Y for yes, N for no)\n')
+    kpplay = raw_input('Keep playing? (Y for yes, N for no)\n')
     print('\n')
     if kpplay == 'y':
         usertracker = usertracker + 1
